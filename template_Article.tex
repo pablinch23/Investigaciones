@@ -1,0 +1,97 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+\title{DLP (Data Loss Prevention)}
+\author{Pablo Chávez Castañeda}
+\date{\today} % Esto añade la fecha actual
+
+
+\begin{document}
+	
+	\maketitle
+	\newpage
+	\tableofcontents % Añade el índice
+	\newpage
+	
+	\begin{abstract}
+		{Este documento proporciona una visión general de DLP, sus principios, tecnologías y la importancia de su implementación en la seguridad de la información.}
+	\end{abstract}
+	
+	\section{Introducción}
+	La prevención de pérdida de datos (DLP) se refiere a un conjunto de herramientas y procesos que ayudan a asegurar que la información sensible no sea divulgada de manera inapropiada.
+	
+	\section{Principios de DLP}
+	\begin{itemize}
+		\item Identificación de datos sensibles
+		\item Monitoreo de la transferencia de datos
+		\item Respuesta ante incidentes
+	\end{itemize}
+	
+	\section{Tecnologías de DLP}
+	Las tecnologías DLP pueden ser clasificadas en:
+	\begin{enumerate}
+		\item DLP en red
+		\item DLP en endpoint
+		\item DLP en la nube
+	\end{enumerate}
+	
+	\section{Buenas practicas}
+	\begin{enumerate}
+		\item \textbf{Priorizar los datos}
+		\begin{itemize}
+			\item No todos los datos son igual de críticos, el primer paso es decidir qué datos causarías los problemas más graves en caso de robarse. 
+			\item La DLP debe comenzar por los datos más valiosos sensibles, que tengan la mayor probabilidad de ser elegidos objetivos por los atacantes
+		\end{itemize}
+		\item \textbf{Clasificar los datos}
+		\begin{itemize}
+			\item Se clasifican los datos de acuerdo al contexto, esto para aplicar etiquetas de clasificación persistentes a los que datos que les permite a las organizaciones hacer seguimiento al uso de los mismos.
+			\item Examina los datos para identificar expresiones regulares, como números de seguridad social, tarjetas o palabras clave (por ejemplo:"confidencial").
+		\end{itemize}
+		\item \textbf{Comprender cuando están en riesgo los datos}
+		\begin{itemize}
+			\item Existen diversos riesgos asociados a los datos distribuidos a los dispositivos de los usuarios, los datos suelen estar en el punto más alto de riesgo al momento en que se usan en los puntos de contacto. 
+			\item Algunos ejemplos serían adjuntos datos a un correo electrónico o transferirlos a un dispositivo de almacenamiento extraíble. Un programa robusto de DLP debe tener presente la movilidad de los datos y cuándo estarán en riesgo.
+		\end{itemize}
+		\item \textbf{Motorización de los datos en movimiento}
+		\begin{itemize}
+			\item Es importante saber cómo se utilizan los datos e identificar los comportamientos que ponen en riesgo los datos.
+			\item Las organizaciones necesitan monitorear los datos para obtener visibilidad hacia lo que está ocurriendo con sus datos sensibles y para determinar el alcance de los problemas que su estrategia de DLP debe abordar.
+		\end{itemize}
+	\end{enumerate}
+	
+	\section{Tipos de soluciones de DLP}
+		Debido a que los atacantes emplean una gran diversidad de estrategias para robar datos, la solución adecuada debe ofrecer soluciones de detección que permitan defenderse de muchas maneras en que los datos se puedan divulgar. Los tipos de soluciones de prevención de pérdida de datos incluyen:
+	\begin{enumerate}
+		\item \textbf{Correo electrónico}
+		\begin{itemize}
+			\item Protegen su empresa contra el phishing y la \textbf{ingeniería social} mediante la detección de mensajes entrantes y salientes.
+		\end{itemize}
+		\item \textbf{Gestión de puntos de contacto}
+		\begin{itemize}
+			\item Por cada dispositivo que almacene datos, una solución endpoint de DLP monitoriza los datos cuando los dispositivos están conectados a la red o sin conexión.
+		\end{itemize}
+		\item \textbf{Red}
+		\begin{itemize}
+			\item Los datos en tránsito en la red deben monitorizarse, para que los administradores puedan estar al tanto de cualquier anomalía.
+		\end{itemize}
+		\item \textbf{La nube}
+		\begin{itemize}
+			\item Debido a que incremento el numero de empleados a distancia, una solución de DLP en la nube garantiza que los datos almacenados en la nube estén monitoreados y protegidos.
+		\end{itemize}
+	\end{enumerate}
+	
+	\section{Reglas de clasificación de datos}
+	Estas reglas permiten identificar y clasificar información sensible, como:
+	\begin{itemize}
+		\item Información personal(PII)
+		\item Datos financieros (Números de tarjetas, cuentas bancarias)
+		\item Propiedad intelectual (Proyectos, diseños)
+		\item Información confidencial de la empresa (estrategias, contratos)
+	\end{itemize}
+	
+	
+	\section{Conclusiones}
+	Implementar una estrategia de DLP es crucial para proteger la información sensible de las organizaciones.
+	
+\end{document}
